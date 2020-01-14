@@ -1,3 +1,15 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+.star{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
 .intro {
   position: absolute;
   top: 45%;
@@ -31,5 +43,27 @@
   left: 45%;
   z-index: 1;
   margin: auto;
+  animation: logo 9s ease-out 9s;
+  opacity: 0;
+  }
 
-}
+  .logo svg {
+    width: inherit;
+  }
+
+ @keyframes logo {
+  0% {
+    opacity: 1;
+    transform: scale(2.75);
+    width: 18em;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.1);
+    width: 18em;
+  }
+} 

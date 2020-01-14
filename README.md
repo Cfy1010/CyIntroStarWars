@@ -1,4 +1,4 @@
 # Star Wars opening crawl 
 ### HTML
-## CSS
-## JS
+### CSS
+### JS
