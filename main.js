@@ -4,6 +4,15 @@ const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 const fragment = document.createDocumentFragment();
 
+//Si quelqu’un a réduit les animations, on n’affiche pas les étoiles.
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)",
+);
+
+if (!prefersReducedMotion.matches) {
+  // génération des étoiles
+}
+
 if (!prefersReducedMotion.matches) {
   // Generate the specified number of stars
   for (let i = 0; i < numStars; i++) {
